@@ -30,7 +30,7 @@ def content():
 		search = request.form['search']
 		cursor = mysql.connection.cursor(MySQLdb.cursors.DictCursor)
 		cursor.execute('SELECT * FROM alimentos WHERE Alimento = %s', (search, ))
-		searched = cursor.fetchall()
+		searched = cursor.fetchone()
 		if searched:
 			msg = "Resultados obtenidos"
 			prompt = str(search)
