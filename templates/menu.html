@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SuperAutos DALKO</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='estilosm2.css') }}">
+</head>
+<body>
+    <nav>
+        <span class="logo"><i class='bx bx-home-heart'></i></span>
+        <button class="btn-menu"><i class='bx bx-menu'></i></button>
+        <ul class="menu-options">
+            <li><a href="{{ url_for('menu') }}">Inicio</a></li>
+            <li>Buscar</a></li>
+            <li>Carrito</a></li>
+            <li>Perfil</a></li>
+            <li><a href="{{ url_for('logout') }}">Cerrar Sesion</a></li>
+        </ul>
+    </nav>
+    <div class="MenuCuerpo">
+        <h1>SITIO EN CONSTRUCCION</h1>
+        <p>Proximamente se vienen cosas grandes.</p>
+        <img src="../static/img/wip.gif" alt="WIP" class="centered">
+    </div>
+</body>
+</html>

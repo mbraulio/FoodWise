@@ -1,0 +1,28 @@
+<!-- Store this code in 'login.html' file inside the 'templates' folder -->
+
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title> Iniciar Sesion </title>
+		<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">		 
+	</head>
+	<body></br></br></br></br></br>
+		<div align="center">
+            <img src="/static/img/superautos.png" alt="superautos">
+		<div align="center" class="border">
+			<div class="header">
+				<h1 class="word">Iniciar Sesion</h1>
+			</div></br></br></br>
+			<h2 class="word">
+				<form action="{{ url_for('login') }}" method="post">
+				<div class="msg">{{ msg }}</div>
+					<input id="correo" name="correo" type="text" placeholder="Correo" class="textbox"/></br></br>
+					<input id="contrasenia" name="contrasenia" type="password" placeholder="Contraseña" class="textbox"/></br></br></br>
+					<input type="submit" class="btn" value="Iniciar sesion"></br></br>
+				</form>
+			</h2>
+			<p class="bottom">¿No tienes una cuenta? <a class="bottom" href="{{url_for('register')}}"> Registrate aqui</a></p>
+		</div>
+		</div>
+	</body>
+</html>

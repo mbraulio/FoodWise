@@ -1,0 +1,30 @@
+<!-- Store this code in 'register.html' file inside the 'templates' folder -->
+
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title> Registro </title>
+		<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">			 
+	</head>
+	<body></br></br></br></br></br>
+		<div align="center">
+            <img src="/static/img/superautos.png" alt="superautos">
+		<div align="center" class="border">
+			<div class="header">
+				<h1 class="word">Registro</h1>
+			</div></br></br></br>
+			<h2 class="word">
+				<form action="{{ url_for('register') }}" method="post">
+				<div class="msg">{{ msg }}</div>
+					<input id="nombre" name="nombre" type="text" placeholder="Nombre" class="textbox"/></br></br>
+					<input id="correo" name="correo" type="email" placeholder="Correo" class="textbox"/></br></br>
+                    <input id="direccion" name="direccion" type="text" placeholder="Direccion" class="textbox"/></br></br>
+                    <input id="contrasenia" name="contrasenia" type="password" placeholder="Contraseña" class="textbox"/></br></br>
+					<input type="submit" class="btn" value="Registrarse"></br>
+				</form>
+			</h2>
+			<p class="bottom">¿Ya tienes una cuenta? <a class="bottom" href="{{url_for('login')}}"> Inicie sesion aqui</a></p>
+		</div>
+		</div>
+	</body>
+</html>
