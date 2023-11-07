@@ -1,4 +1,4 @@
 flask
 flask_mysqldb
-MySQLdb.cursors
+MySQLdb
 openai
