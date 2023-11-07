@@ -1,6 +1,6 @@
-Flask==3.0.0
-Flask-MySQLdb==2.0.0
-gunicorn==21.2.0
-mysqlclient==2.2.0
-openai==1.1.1
-packaging==23.2
+Flask
+Flask-MySQLdb
+gunicorn
+mysqlclient
+openai
+packaging
