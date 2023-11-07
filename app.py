@@ -3,10 +3,11 @@ from flask_mysqldb import MySQL
 import MySQLdb.cursors
 import re
 import openai
+import os
 
 app = Flask(__name__)
 
-openai.api_key = "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" #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
+openai.api_key = os.getenv("OPENAI_API_KEY")
 
 app.secret_key = 'your secret key'
 
