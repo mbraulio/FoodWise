@@ -6,7 +6,7 @@ import openai
 
 app = Flask(__name__)
 
-openai.api_key = "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" #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
+openai.api_key = "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" #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
 
 app.secret_key = 'your secret key'
 
@@ -30,7 +30,7 @@ def content():
 		search = request.form['search']
 		cursor = mysql.connection.cursor(MySQLdb.cursors.DictCursor)
 		cursor.execute('SELECT * FROM alimentos WHERE Alimento = %s', (search, ))
-		searched = cursor.fetchone()
+		searched = cursor.fetchall()
 		if searched:
 			msg = "Resultados obtenidos"
 			prompt = str(search)
